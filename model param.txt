@@ -1,0 +1,89 @@
+Model: "sequential_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d_24 (Conv2D)          (None, 48, 48, 64)        640       
+                                                                 
+ batch_normalization_24 (Ba  (None, 48, 48, 64)        256       
+ tchNormalization)                                               
+                                                                 
+ activation_24 (Activation)  (None, 48, 48, 64)        0         
+                                                                 
+ conv2d_25 (Conv2D)          (None, 48, 48, 64)        36928     
+                                                                 
+ batch_normalization_25 (Ba  (None, 48, 48, 64)        256       
+ tchNormalization)                                               
+                                                                 
+ activation_25 (Activation)  (None, 48, 48, 64)        0         
+                                                                 
+ max_pooling2d_12 (MaxPooli  (None, 24, 24, 64)        0         
+ ng2D)                                                           
+                                                                 
+ conv2d_26 (Conv2D)          (None, 24, 24, 128)       73856     
+                                                                 
+ batch_normalization_26 (Ba  (None, 24, 24, 128)       512       
+ tchNormalization)                                               
+                                                                 
+ activation_26 (Activation)  (None, 24, 24, 128)       0         
+                                                                 
+ conv2d_27 (Conv2D)          (None, 24, 24, 128)       147584    
+                                                                 
+ batch_normalization_27 (Ba  (None, 24, 24, 128)       512       
+ tchNormalization)                                               
+                                                                 
+ activation_27 (Activation)  (None, 24, 24, 128)       0         
+                                                                 
+ max_pooling2d_13 (MaxPooli  (None, 12, 12, 128)       0         
+ ng2D)                                                           
+                                                                 
+ conv2d_28 (Conv2D)          (None, 12, 12, 256)       295168    
+                                                                 
+ batch_normalization_28 (Ba  (None, 12, 12, 256)       1024      
+ tchNormalization)                                               
+                                                                 
+ activation_28 (Activation)  (None, 12, 12, 256)       0         
+                                                                 
+ conv2d_29 (Conv2D)          (None, 12, 12, 256)       590080    
+                                                                 
+ batch_normalization_29 (Ba  (None, 12, 12, 256)       1024      
+ tchNormalization)                                               
+                                                                 
+ activation_29 (Activation)  (None, 12, 12, 256)       0         
+                                                                 
+ max_pooling2d_14 (MaxPooli  (None, 6, 6, 256)         0         
+ ng2D)                                                           
+                                                                 
+ conv2d_30 (Conv2D)          (None, 6, 6, 512)         1180160   
+                                                                 
+ batch_normalization_30 (Ba  (None, 6, 6, 512)         2048      
+ tchNormalization)                                               
+                                                                 
+ activation_30 (Activation)  (None, 6, 6, 512)         0         
+                                                                 
+ conv2d_31 (Conv2D)          (None, 6, 6, 512)         2359808   
+                                                                 
+ batch_normalization_31 (Ba  (None, 6, 6, 512)         2048      
+ tchNormalization)                                               
+                                                                 
+ activation_31 (Activation)  (None, 6, 6, 512)         0         
+                                                                 
+ max_pooling2d_15 (MaxPooli  (None, 3, 3, 512)         0         
+ ng2D)                                                           
+                                                                 
+ flatten_3 (Flatten)         (None, 4608)              0         
+                                                                 
+ dense_9 (Dense)             (None, 4096)              18878464  
+                                                                 
+ dropout_6 (Dropout)         (None, 4096)              0         
+                                                                 
+ dense_10 (Dense)            (None, 4096)              16781312  
+                                                                 
+ dropout_7 (Dropout)         (None, 4096)              0         
+                                                                 
+ dense_11 (Dense)            (None, 7)                 28679     
+                                                                 
+=================================================================
+Total params: 40380359 (154.04 MB)
+Trainable params: 40376519 (154.02 MB)
+Non-trainable params: 3840 (15.00 KB)
+_________________________________________________________________
